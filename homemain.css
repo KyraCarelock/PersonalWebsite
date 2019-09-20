@@ -1,0 +1,43 @@
+@import url(https://everythingfonts.com/font/face/y9cYCsa7zQR1KD0ZJ7qyqQeF);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+    /*background color transition*/
+    animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+       /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 50s; /* Chrome and Safari */
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @keyframes colorchange
+  {
+    0%   {background: rgb(255, 0, 0);}
+    25%  {background: rgb(187, 49, 14);}
+    50%  {background: rgb(206, 99, 12);}
+    75%  {background: rgb(255, 176, 6);}
+    100% {background: rgb(255, 251, 0);}
+  }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+    0%   {background: rgb(225, 0, 0);}
+    25%  {background: rgb(187, 49, 14);}
+    50%  {background: rgb(206, 99, 12);}
+    75%  {background: rgb(255, 176, 6);}
+    100% {background: rgb(255, 251, 0);}
+  }
+
+
+.jumbotron {text-align: center;
+    font-family: 'quicksand_light_oblique';
+    font-weight: 900;
+    
+}
+
+.footer-copyright{position:absolute;
+    text-align: center;
+    bottom:0;
+    width:100%;
+    height: 30px;
+}
